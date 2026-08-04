@@ -34,7 +34,7 @@ The complete request flow is:
 >CAP compiles the CDS model into CSN (Core Schema Notation).
 >Based on the CSN, CAP generates the OData metadata ($metadata in XML format).
 >We expose the entities through a service in the srv layer.
->When the application starts (cds watch or deployment), the CAP runtime loads the model and services. ← This step was missing.
+>When the application starts (cds watch or deployment), the CAP runtime loads the model and services. 
 >The client (UI/Fiori/Postman) sends an OData request.
 >The CAP runtime receives the request.
 >If there is no custom event handler, the generic handler automatically performs the CRUD operation. If you have written custom logic (before, on, or after handlers), CAP executes that first.
@@ -42,3 +42,8 @@ The complete request flow is:
 >The database adapter converts CQN into SQL.
 >The database executes the SQL and returns the result.
 >CAP converts the result back into an OData JSON response and sends it to the client.
+
+**keypoints(request flow)**
+>`CDS → CSN → Metadata → Service Exposure → CAP Runtime → OData Request → Generic/Custom Handler → CQN → SQL → Database → OData JSON Response.`
+
+
