@@ -64,7 +64,7 @@ The complete request flow is:
 
 `Keypoints`
 
->I create the project → package.json tells npm what I need → npm install gets it → node_modules stores it → package-lock.json keeps the exact versions → Node.js runs the application → CAP provides the framework for building the application.
+`>I create the project → package.json tells npm what I need → npm install gets it → node_modules stores it → package-lock.json keeps the exact versions → Node.js runs the application → CAP provides the framework for building the application.`
 
 **"What's the difference between dependencies and devDependencies?"**
 
@@ -72,6 +72,6 @@ The complete request flow is:
 
 `keypoints`
 
->dependencies → application needs it to RUN.
+`>dependencies → application needs it to RUN.
 
->devDependencies → developer needs it to BUILD/TEST/DEVELOP.
+>devDependencies → developer needs it to BUILD/TEST/DEVELOP.`
