@@ -72,6 +72,4 @@ The complete request flow is:
 
 `keypoints`
 
-`>dependencies → application needs it to RUN.
-
->devDependencies → developer needs it to BUILD/TEST/DEVELOP.`
+`>dependencies → application needs it to RUN. devDependencies → developer needs it to BUILD/TEST/DEVELOP.`
