@@ -58,4 +58,20 @@ The complete request flow is:
 
 >If the front end doesn't read the metadata, it won't know the service structure, so the developer has to manually configure or hardcode it. That makes the app harder to maintain
 
+**Why need package.json? what is the purpose of it.**
 
+>“In my CAP Node.js project, I have a package.json file where I maintain the packages and scripts that my project needs. When I run npm install, npm reads that file and downloads those packages into the node_modules folder. At the same time, package-lock.json keeps track of the exact versions of those packages, so when someone else installs the project, we get a consistent setup.
+
+`Keypoints`
+
+>I create the project → package.json tells npm what I need → npm install gets it → node_modules stores it → package-lock.json keeps the exact versions → Node.js runs the application → CAP provides the framework for building the application.
+
+**"What's the difference between dependencies and devDependencies?"**
+
+> I separate them based on when the package is required. If the application needs the package while it's running, I keep it under dependencies. If I only need it during development, testing, or the build process, I keep it under devDependencies. For example, Express or @sap/cds would be runtime dependencies, whereas Jest or ESLint would normally be dev dependencies.
+
+`keypoints`
+
+>dependencies → application needs it to RUN.
+
+>devDependencies → developer needs it to BUILD/TEST/DEVELOP.
